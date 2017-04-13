@@ -27,9 +27,9 @@
 		</div>
 	</div>
 
-	<div style="margin-top:100px; margin-left">
-		<div><a href="/users/new">Create User</a></div>
-		<div><a href="/users/search">Search User</a></div>
-		<div><a href="/users">List all users</a></div>
+	<div style="margin:auto; margin-top:100px; width: 300px;">
+		<div><button type="button" class="btn btn-success" style="margin-top: 20px; width: 100%;" onclick="location.href='/users/new';" href="/users/new">Create User</button></div>
+		<div><button type="button" class="btn btn-warning" style="margin-top: 20px; width: 100%;" onclick="location.href='/users/search';" href="/users/search">Search User</button></div>
+		<div><button type="button" class="btn btn-danger"  style="margin-top: 20px; width: 100%;" onclick="location.href='/users';" href="/users">List all users</button></div>
 	</div>
 @stop

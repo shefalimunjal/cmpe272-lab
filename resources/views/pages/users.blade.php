@@ -27,8 +27,10 @@
 		</div>
 	</div>
 
-	<div style="margin-top:100px; margin-left">
-		<table class="table">
+	<div style="text-align: center; max-width: 1080px; margin: auto; margin-top:50px; ">
+		<h4 style="margin: auto; margin-bottom: 30px;">Users</h4>
+
+		<table class="table table-striped table-bordered table-condensed">
     <thead>
         <tr>
             <th>First Name</th>

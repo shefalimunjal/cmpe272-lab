@@ -27,7 +27,9 @@
 		</div>
 	</div>
 
-	<div style="max-width: 400px; margin: auto; margin-top:100px; ">
+	<div style="max-width: 400px; margin: auto; margin-top:100px; text-align: center;">
+		<h4 style="margin-bottom: 20px;">Create New User</h4>
+
 		<?php
 			if ($success) {
 				echo "<div class=\"alert alert-success fade in\">New user successfuly created!</div>";
@@ -56,7 +58,7 @@
   			<div class="form-group">
     			<input type="text" class="form-control" name="cell_phone" placeholder="Cell Phone">
   			</div>
-  			<button type="submit" class="btn btn-default">Create</button>
+  			<button style="width: 150px; margin: auto; margin-bottom: 50px; margin-top: 10px;" type="submit" class="btn btn-success">Create</button>
 		</form>
 	</div>
 @stop

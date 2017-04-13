@@ -27,10 +27,12 @@
 		</div>
 	</div>
 
-	<div style="max-width: 400px; margin: auto; margin-top:100px; ">
+	<div style="width: 300px; margin: auto; margin-top:100px; text-align: center;">
 
-		<form action="/users/search_results" method="get">
-			<select class="selectpicker" name="field">
+		<h4 style="margin: auto;">Search User</h4>
+
+		<form action="/users/search_results" method="get" style="margin-top: 20px;, width: 100%;">
+			<select class="selectpicker" name="field" style="width: 100%;">
   				<option>first_name</option>
   				<option>last_name</option>
   				<option>user_name</option>
@@ -40,10 +42,10 @@
   				<option>cell_phone</option>
 			</select>
 
-  			<div class="form-group">
+  			<div class="form-group" style="margin-top: 20px;">
     			<input type="text" class="form-control" name="value" placeholder="search term">
   			</div>
-  			<button type="submit" class="btn btn-default">Search</button>
+  			<button type="submit" class="btn btn-warning" style="width: 150px;">Search</button>
 		</form>
 	</div>
 @stop
