@@ -27,35 +27,23 @@
 		</div>
 	</div>
 
-	<div style="margin-top:100px; margin-left">
-		<table class="table">
-    <thead>
-        <tr>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Email</th>
-            <th>Username</th>
-            <th>Home Address</th>
-            <th>Home Phone</th>
-            <th>Cell Phone</th>
-        </tr>
-    </thead>
+	<div style="max-width: 400px; margin: auto; margin-top:100px; ">
 
-    <tbody>
-    	<?php
-			foreach ($users as &$user) {
-    			echo "<tr>
-            			<td>".$user->first_name."</td>
-            			<td>".$user->last_name."</td>
-            			<td>".$user->email."</td>
-            			<td>".$user->user_name."</td>
-            			<td>".$user->home_address."</td>
-            			<td>".$user->home_phone."</td>
-            			<td>".$user->cell_phone."</td>
-        			</tr>";
-			}
-		?>
-    </tbody>
-</table>
+		<form action="/users/search_results" method="get">
+			<select class="selectpicker" name="field">
+  				<option>first_name</option>
+  				<option>last_name</option>
+  				<option>user_name</option>
+  				<option>email</option>
+  				<option>home_address</option>
+  				<option>home_phone</option>
+  				<option>cell_phone</option>
+			</select>
+
+  			<div class="form-group">
+    			<input type="text" class="form-control" name="value" placeholder="search term">
+  			</div>
+  			<button type="submit" class="btn btn-default">Search</button>
+		</form>
 	</div>
 @stop
