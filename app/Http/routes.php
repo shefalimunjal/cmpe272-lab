@@ -16,7 +16,6 @@ Route::get('/', function () {
 });
 
 Route::get('/','Home@index');
-Route::get('/products','Home@products');
 Route::get('/contact_us','Home@contact_us');
 Route::get('/news','Home@news');
 Route::get('/about_us','Home@about_us');
@@ -30,3 +29,10 @@ Route::get('/users/new','User@new_user');
 Route::post('/users/create','User@create');
 Route::get('/users/search','User@search');
 Route::get('/users/search_results','User@search_results');
+
+Route::get('/products/recent','Products@recent');
+Route::get('/products/most_visited','Products@most_visited');
+Route::get('/products/{id}','Products@product');
+Route::get('/products','Products@products');
+
+
