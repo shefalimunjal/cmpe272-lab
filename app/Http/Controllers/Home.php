@@ -12,10 +12,6 @@ class Home extends Controller{
       return view("index");
    	}
 
-	public function products(Request $request){
-      return view("pages.products");
-   	}
-
    public function about_us(Request $request){
       return view("pages.about_us");
    }

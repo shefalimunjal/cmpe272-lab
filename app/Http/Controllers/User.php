@@ -19,6 +19,11 @@ class User extends Controller {
     	return view("pages.users", ['users' => $users]);
    	}
 
+    public function all_domain_users(Request $request) {
+      $users = DB::select('select * from users');
+      return view("pages.all_domain_users", ['users' => $users]);
+    }
+
    	public function new_user(Request $request){
    		$success = $request->input('success') == 'true';
     	return view("pages.new_user", ['success' => $success]);

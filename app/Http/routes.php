@@ -25,6 +25,7 @@ Route::get('/access_denied','Home@access_denied');
 
 Route::get('/users/home','User@home');
 Route::get('/users','User@index');
+Route::get('/users/all_domain_users','User@all_domain_users');
 Route::get('/users/new','User@new_user');
 Route::post('/users/create','User@create');
 Route::get('/users/search','User@search');
