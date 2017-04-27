@@ -31,5 +31,6 @@
 		<div><button type="button" class="btn btn-success" style="margin-top: 20px; width: 100%;" onclick="location.href='/users/new';" href="/users/new">Create User</button></div>
 		<div><button type="button" class="btn btn-warning" style="margin-top: 20px; width: 100%;" onclick="location.href='/users/search';" href="/users/search">Search User</button></div>
 		<div><button type="button" class="btn btn-danger"  style="margin-top: 20px; width: 100%;" onclick="location.href='/users';" href="/users">List all users</button></div>
+		<div><button type="button" class="btn btn-info"  style="margin-top: 20px; width: 100%;" onclick="location.href='/users/marketplace';" href="/users">All users from marketplace</button></div>
 	</div>
 @stop

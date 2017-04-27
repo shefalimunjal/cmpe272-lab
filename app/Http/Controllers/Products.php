@@ -29,6 +29,7 @@ class Products extends Controller {
     		foreach ($recent_products as $product_id) {
     			$sql_statement = $sql_statement.$product_id.",";
     		}
+        print_r($sql_statement)
     		$sql_statement = substr($sql_statement, 0, -1);
     		$sql_statement = $sql_statement.")";
     		$products = DB::select($sql_statement);
@@ -84,7 +85,7 @@ class Products extends Controller {
     		$index = array_search($id ,$recent_products);
     	}
 
-		//1.3 add this product id to the front of recent products array
+		  //1.3 add this product id to the front of recent products array
     	array_unshift($recent_products, $id);
     	$recent_products = array_splice($recent_products, 0, 5);
 

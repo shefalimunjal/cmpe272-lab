@@ -30,6 +30,7 @@ Route::get('/users/new','User@new_user');
 Route::post('/users/create','User@create');
 Route::get('/users/search','User@search');
 Route::get('/users/search_results','User@search_results');
+Route::get('/users/marketplace','User@marketplace');
 
 Route::get('/products/recent','Products@recent');
 Route::get('/products/most_visited','Products@most_visited');
