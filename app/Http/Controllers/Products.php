@@ -29,7 +29,6 @@ class Products extends Controller {
     		foreach ($recent_products as $product_id) {
     			$sql_statement = $sql_statement.$product_id.",";
     		}
-        print_r($sql_statement)
     		$sql_statement = substr($sql_statement, 0, -1);
     		$sql_statement = $sql_statement.")";
     		$products = DB::select($sql_statement);
